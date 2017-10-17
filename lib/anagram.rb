@@ -7,7 +7,7 @@ class Anagram
     @word = word
   end
 
-  def self.match(array)
+  def match(array)
     new_array = []
     array.each do |chance|
       if chance.sort == @word.sort then new_array << chance end
