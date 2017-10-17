@@ -12,7 +12,7 @@ class Anagram
     array.each do |chance|
       if chance.sort == @word.sort then new_array << chance end
     end
-    new_array
+    new_array.uniq
   end
 
 
