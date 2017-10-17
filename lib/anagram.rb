@@ -10,7 +10,7 @@ class Anagram
   def match(array)
     new_array = []
     array.each do |chance|
-      if chance.sort == @word.sort then new_array << chance end
+      if chance.chars.sort.join == @word.chars.sort.join then new_array << chance end
     end
     new_array.uniq
   end
